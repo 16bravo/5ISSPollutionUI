@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!--<div class="head">-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <span class="navbar-brand" href="#">
+    <h1>
+      {{ title }}
+    </h1>
+  </span>
+</nav>
+<div class="row"> 
+  <div class="col-md-3 selection">
+      <input [(ngModel)]="dateMesB" type="date" id="dateMes" name="dateMes" min="2018-01-01" max="2018-12-31" (change)="onDateChanged()"><div (click)="ozone()">Ozone (o3)</div><div (click)="pm10()">Particules fines (pm10)</div>
+  </div>
+  <div class="col-md-9">
+    <div class="row"><div id="map"></div></div>
+    <div class="row" style="height:20px;"></div>
+    <div class="row">
+      <h2 id="nomStation"></h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12" id="chartContainer" style="height: 370px; width: 100%;"></div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5 col-md-12 col-sm-12" id="details"><table class="table table-sm table-hover table-stripped table-light table-responsive-sm" id="tableau"></table></div>
+    </div>
+  </div>
+</div>
+<div class="bg"></div>
+<router-outlet></router-outlet>

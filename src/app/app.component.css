@@ -1,0 +1,52 @@
+#map {
+    height: 450px;
+    width: 100%;
+}
+
+.leaflet-marker-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.head{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 2000;
+    background-color: white;
+    color:black;
+    height:100px;
+}
+
+.maps{
+    margin-top: 120px;
+}
+
+.selection>div, .selection>input{
+    display:block;
+    margin: 10px auto 10px auto;
+    cursor:pointer;
+    overflow:hidden;
+    outline:none;
+    border-radius: 10px 0 100px 0;
+    width:100%;
+}
+
+.selection>input{
+    border:none;
+}
+
+.selection>div{
+    background-color: Transparent;
+    background-color: no-repeat;
+    color:white;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+.selection>div:hover{
+    background-color: rgba(255,255,255,0.25);
+}

@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Thasadith', sans-serif;
+    font-size:1.5em;
+    font-weight: 1000; /*plus grasse*/
+}
+
+h1,h2{
+    color:white;
+    font-family: 'Staatliches', cursive;
+}
+
+.details :hover{
+    cursor: pointer;
+}
+
+.canvasjs-chart-canvas{
+    border-radius: 0 20px 0 20px;
+}
+
+table{
+    text-align: center;
+    font-size: 10px;
+    border-radius: 0 20px 0 20px;
+}
+
+td{
+    width:100px;
+}
+
+.bg{
+    position: fixed;
+    z-index: -1000;
+    display: block;
+    background-image: url(assets/bg4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    width: 110%;
+    height: 110%;
+    top:-10px;
+    left:-10px;
+    background-color:black;
+    background-size: cover;
+    transform: scale(-1,1);
+}
+
+#map{
+    border-radius: 0 50px 0 50px;
+}
+
+
+/*Correction des bizarreries de Bootstrap*/
+.row{
+    margin-right:0;
+    margin-left:0;
+}
+
+.col-md-6{
+    padding:0;
+}
+
+.navbar-toggler {
+    background-image: url(https://mdbootstrap.com/img/svg/hamburger1.svg?color=fff);
+    width:32px;
+    height:32px;
+}
